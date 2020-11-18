@@ -517,6 +517,7 @@ img {
 
   color: var(--button-color);
   background-color: var(--accent-color);
+  cursor: pointer;
 }
 
 .button .primery {
@@ -745,9 +746,9 @@ textarea {
 .form-svg {
   position: absolute;
   display: inline-block;
-  transform: translate(12px, 11px);
-  background-size: cover;
-  fill: var(--title-text-color);
+  /* transform: translate(12px, 11px);
+  z-index: 55;
+  fill: var(--title-text-color); */
 }
 
 .placeholder {
