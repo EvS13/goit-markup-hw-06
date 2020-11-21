@@ -950,6 +950,7 @@ textarea {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  margin-left: 4px;
 
   color: var(--accent-color);
   text-decoration: underline;
@@ -985,42 +986,74 @@ form-btn:focus {
   cursor: pointer;
 }
 
-/* .form-policy {
-  display: inline-flex;
+/* .policy {
+  display: flex;
   align-items: center;
 } */
 
-.checkbox:checked {
+/* .checkbox:checked {
   width: 16px;
   height: 15px;
-}
+} */
 
-.check {
-  padding-left: 1.2em;
-}
+/* .check {
+    padding-left: 1.2em;
+  }
 
-.check-input {
-  position: absolute;
-  -webkit-appearance: none;
-  -moz-appearance: none;
+  .check-input {
+    position: absolute;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+
+  .check-box {
+    position: absolute;
+    margin-left: -1.2em;
+    width: 16px;
+    height: 15px;
+    border-color: var(--title-text-color);
+    background-color: var(--button-color);
+
+    background-image: url(../images/check-off.svg);
+  }
+
+  .check-input:checked + .check-box {
+    background-image: url(../images/check-off.svg);
+  }
+
+  .check-input:focus + .check-box {
+    background-image: url(../images/check.svg);
+  } */
+
+.checkbox {
   appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+
+  position: absolute;
 }
 
 .check-box {
-  position: absolute;
-  margin-left: -1.2em;
+  display: inline-block;
+  content: "";
   width: 16px;
   height: 15px;
-  border-color: var(--title-text-color);
-  background-color: var(--button-color);
+  margin-right: 8px;
 
-  background-image: url(../images/check-off.svg);
+  border: 2px solid var(--title-text-color);
+  border-radius: 4px;
 }
 
-.check-input:checked + .check-box {
-  background-image: url(../images/check-off.svg);
-}
-
-.check-input:focus + .check-box {
+.checkbox:checked + .check-box {
+  border-color: transparent;
+  background-color: var(--accent-color);
   background-image: url(../images/check.svg);
+  background-size: contain;
+  background-origin: border-box;
+}
+
+.checkbox-label {
+  display: inline-flex;
+  align-items: center;
 }
