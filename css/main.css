@@ -35,19 +35,19 @@ img {
   margin-left: 30px;
 }
 
-/* header */
-
-.header {
-  background-color: #ffffff;
-  color: var(--title-text-color);
-}
-
 .container {
   margin-left: auto;
   margin-right: auto;
   width: 1200px;
   padding-right: 15px;
   padding-left: 15px;
+}
+
+/* header */
+
+.header {
+  background-color: #ffffff;
+  color: var(--title-text-color);
 }
 
 /* main-nav */
@@ -75,25 +75,14 @@ img {
   text-decoration: none;
 }
 
+.header-web {
+  color: var(--accent-color);
+}
+
 .logo-header .logo {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
-}
-
-.logo-footer {
-  color: #ffffff;
-  font-family: Raleway, sans-serif;
-
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  text-decoration: none;
-}
-
-.header-web {
-  color: var(--accent-color);
 }
 
 /* site-nav */
@@ -735,6 +724,17 @@ img {
 .footer-button:focus {
   color: var(--footer-br-color);
   cursor: pointer;
+}
+
+.logo-footer {
+  color: #ffffff;
+  font-family: Raleway, sans-serif;
+
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-decoration: none;
 }
 
 /* Бэкдроп и модальное окно */
