@@ -207,21 +207,6 @@ img {
   background-color: #2f303a;
 }
 
-.overlay {
-  height: 600px;
-  margin-left: auto;
-  margin-right: auto;
-  background-size: cover;
-  background-image: linear-gradient(
-      to right,
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-    url("../images/header-img-1.jpg");
-  background-color: #757575;
-  background-repeat: no-repeat;
-}
-
 .hero .title {
   margin-top: 0;
   margin-bottom: 30px;
@@ -235,6 +220,21 @@ img {
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+}
+
+.overlay {
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-size: cover;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../images/header-img-1.jpg");
+  background-color: #757575;
+  background-repeat: no-repeat;
 }
 
 /* feature */
